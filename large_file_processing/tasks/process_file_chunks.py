@@ -6,7 +6,7 @@ from django.conf import settings
 from large_file_processing.metrics import transaction_sent_to_celery_counter
 from large_file_processing.utils import convert_decimal_to_float
 
-from .process_transaction import process_transaction_task
+from .process_transaction_chunk import process_transaction_task
 
 
 @shared_task
